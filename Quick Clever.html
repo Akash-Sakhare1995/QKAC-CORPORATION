@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <body>
+             <img src="QKAC.png" alt="Logo" width="60">
+           
+        </body>
+    </head>
+    <header style="font-family: Georgia, 'Times New Roman', Times, serif;justify-content: center; color: rgb(102, 8, 121);size: 700px;font-weight: 600;">QKAC CORPORATION LTD.</footer>
+    <title>QUICK CLEVER- QKAC CORPORATION</title>
+    <h3>  <a href="index.html" style="font-family:Georgia, 'Times New Roman', Times, serif;color: rgb(244, 243, 246); position: relative;font-weight: 100px;float:center;background-color: rgb(47, 6, 228);font-size:medium;">Website Dashboard </a> </h3>
+    
+
+    <link rel ="stylesheet" href="style.css">
+    
+    
+
+
+    </style>
+
+</head>
+<body>
+
+        <div class="msg-container hide">
+        <p id="msg">Winner</p>
+        <button id="new-btn">New Game</button>
+    </div>
+    <MAIN>
+        <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; color: rgb(107, 31, 31)";>QUICK CLEVER GAME</h1>
+        <div class = "container">
+        <div class="game">          
+            <button class ="box"></button>
+            <button class ="box"></button>
+            <button class ="box"></button>
+            <button class ="box"></button>
+            <button class ="box"></button>
+            <button class ="box"></button>
+            <button class ="box"></button>
+            <button class ="box"></button>
+            <button class ="box"></button>
+        </div>
+    </div>
+    <button id="reset-btn">Reset</button>
+    </MAIN>
+    <script src="app.js"></script>
+    
+    <form id="commentForm"></form>
+    <textarea style="background-color: rgb(147, 219, 243);font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 100;color: rgb(30, 23, 23);tab-size: 4rcap;" id="commentBox" placeholder="Enter your comment"></textarea>
+    <button style="background-color: rgb(240, 163, 39);font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 600;"  type="button" onclick="submitComment()">Submit</button>
+</form>
+<div id="commentsSection"></div>
+<style>
+    #commentBox {
+        width: 900px;
+        height: 50px;
+    }
+    .submitcomment {
+        color: black;
+    }
+</style>
+<script>
+    function submitComment() {
+      const comment = document.getElementById("commentBox").value;
+      const commentsSection = document.getElementById("commentsSection");
+      const newComment = document.createElement("p");
+      newComment.textContent = comment;
+      commentsSection.appendChild(newComment);
+      document.getElementById("commentBox").value = "";
+    }
+  </script>
+</body>
+<body>
+    
+  </body>
+
+</html>
